@@ -5,6 +5,7 @@ Learns from channels over time, using OpenAI GPT2 machine learning. Can create a
 
 # Commands
 
+
 _addBot_
 
 Creates a new bot using the name and channels passed
@@ -23,6 +24,8 @@ Example
 
 `/gpt2Bot addBot NegativeNancy "@general @worktime @football_club" -updateSchedule 24h`
 
+---
+
 _configBot_
 
 Set and updates values for the bot
@@ -38,11 +41,15 @@ Example
 
 `/gpt2Bot configBot NegativeNancy -updateSchedule 12m`
 
+---
+
 _listBots_
 
 List all current bots
 
 `/gpt2Bot listBots`
+
+---
 
 _deleteBot_
 
@@ -57,6 +64,8 @@ Deletes a bot
 Example
 
 `/gpt2Bot deleteBot NegativeNancy`
+
+---
 
 _teachBot_
 
@@ -73,6 +82,8 @@ Example
 
 `/gpt2Bot teachBot NegativeNancy -startDate 5/12/2020`
 
+---
+
 _messageBot_
 
 Interacts with bot to have them respond
@@ -87,6 +98,8 @@ Interacts with bot to have them respond
 Example
 
 `/gpt2Bot messageBot NegativeNancy "Hello"`
+
+---
 
 _help_
 
