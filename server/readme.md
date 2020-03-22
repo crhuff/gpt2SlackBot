@@ -2,11 +2,31 @@
 
 ## Install
 
-Install python3 and pip3
+Install [python3](https://www.python.org/downloads/), pip3 (comes with python). 
 
-	pip3 install tensorflow==1.15
-	pip3 install gpt-2-simple
-	pip3 install flask
+### To get virtualenv set up
+
+Navigate to `/gptBot`
+
+	pip3 install virtualenv
+	virtualenv venv
+		
+Windows
+	
+	call venv/Scripts/activate
+
+MacOS/Linux
+
+	source venv/Scripts/activate
+
+Install dependencies
+
+	pip3 install -r requirements.txt
+
+To freeze dependencies
+
+	pip3 freeze > requirements.txt
+
 
 You might need to `sudo apt-get update` and `sudo apt-get upgrade`
 
@@ -24,7 +44,7 @@ Note: currently we are only using the run named `run1`.
 
 ## Run
 
-	python3 serer.py
+	python3 server.py
 
 Hit the server with a GET request at `localhost:5000/message` and it should respond with generated text. 
 
